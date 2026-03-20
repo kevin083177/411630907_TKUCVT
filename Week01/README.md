@@ -17,16 +17,30 @@
 | Hypervisor | VMware | `lscpu \| grep Hypervisor` | VMware |
 
 ## 四層驗收證據
-- [ ]() ① Repository：`cat /etc/apt/sources.list.d/docker.list` 輸出
-- [ ] ② Engine：`dpkg -l | grep docker-ce` 輸出
-- [ ] ③ Daemon：`sudo systemctl status docker` 顯示 active
-- [ ] ④ 端到端：`sudo docker run hello-world` 成功輸出
-- [ ] Compose：`docker compose version` 可執行
+- ① Repository：`cat /etc/apt/sources.list.d/docker.list` 輸出
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week01/resources/1.png?raw=true)
+
+- ② Engine：`dpkg -l | grep docker-ce` 輸出
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week01/resources/2.png?raw=true)
+
+- ③ Daemon：`sudo systemctl status docker` 顯示 active
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week01/resources/3.png?raw=true)
+
+- ④ 端到端：`sudo docker run hello-world` 成功輸出
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week01/resources/4.png?raw=true)
+
+- Compose：`docker compose version` 可執行
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week01/resources/5.png?raw=true)
 
 ## 容器操作紀錄
-- [ ] nginx：`sudo docker run -d -p 8080:80 nginx` + `curl localhost:8080` 輸出
-- [ ] alpine：`sudo docker run -it --rm alpine /bin/sh` 內部命令與輸出
-- [ ] 映像列表：`sudo docker images` 輸出
+- nginx：`sudo docker run -d -p 8080:80 nginx` + `curl localhost:8080` 輸出
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week01/resources/6.png?raw=true)
+
+- alpine：`sudo docker run -it --rm alpine /bin/sh` 內部命令與輸出
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week01/resources/7.png?raw=true)
+
+- 映像列表：`sudo docker images` 輸出
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week01/resources/8.png?raw=true)
 
 ## Snapshot 清單
 
