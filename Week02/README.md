@@ -11,16 +11,16 @@
 ## 連線驗證紀錄
 
 - dev-a NAT 可上網：`ping google.com` 輸出
-![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/resources/1.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/assets/1.png?raw=true)
 - 雙向互 ping 成功：貼上雙方 `ping` 輸出
-![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/resources/2-1.png?raw=true)
-![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/resources/2-2.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/assets/2-1.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/assets/2-2.png?raw=true)
 - SSH 連線成功：`ssh <user>@<ip> "hostname"` 輸出
-![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/resources/4.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/assets/4.png?raw=true)
 - SCP 傳檔成功：`cat /tmp/test-from-dev.txt` 在 server-b 上的輸出
-![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/resources/3.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/assets/3.png?raw=true)
 - server-b 不能上網：`ping 8.8.8.8` 失敗輸出
-![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/resources/5.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/assets/5.png?raw=true)
 
 ## 故障演練一：介面停用
 
@@ -62,7 +62,7 @@
     ping 通但 SSH 不通，才往這層查。
 
 ## 網路拓樸圖
-![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/resources/Network%20Topology.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week02/assets/Network%20Topology.png?raw=true)
 
 ## 排錯紀錄
 - 症狀：dev-a 無法 SSH 到 server-b，出現 `Connection refused`
