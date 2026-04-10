@@ -51,10 +51,13 @@ curl: (28) Connection timed out after 5003 milliseconds
 
 ## ProxyJump 跳板連線
 - 指令：
+
 ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week03/assets/1.png?raw=true)
 - 驗證輸出：
+
 ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week03/assets/2.png?raw=true)
 - SCP 傳檔驗證：
+
 ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week03/assets/3.png?raw=true)
 ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/Week03/assets/4.png?raw=true)
 
