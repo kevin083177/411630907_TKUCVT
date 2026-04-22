@@ -4,8 +4,8 @@
 ```mermaid
 flowchart LR
     Host["Host\n192.168.244.130"]
-    Bastion["bastion VM\nNAT: 192.168.244.128\nHost-only: 192.168.244.128"]
-    App["app VM\nHost-only: 192.168.244.129\nDocker: nginx :8080"]
+    Bastion["bastion\nNAT: 192.168.29.128\nHost-only: 192.168.244.128"]
+    App["app\nHost-only: 192.168.244.129\nDocker: nginx :8080"]
 
     Host -- "SSH 22" --> Bastion
     Bastion -- "SSH 22" --> App
