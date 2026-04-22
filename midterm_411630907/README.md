@@ -44,16 +44,16 @@ flowchart LR
 - 故障前：
     - **Host:** `ssh app` 可以正常連線
     - **Host:** `ping 192.168.244.129` 正常
-    ![](https://github.com/CHENGXee/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-A-before.png?raw=true)
+    ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-A-before.png?raw=true)
 - 故障中：
     - **Host:** `ssh app` timeout
     - **Host:** `ping 192.168.244.129` 不通
-    ![](https://github.com/CHENGXee/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-A-during.png?raw=true)
+    ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-A-during.png?raw=true)
 - 回復後：
     將 app 網卡重啟 `sudo ip link set ens33 up`
     - **Host:** `ssh app` 可以正常連線
     - **Host:** `ping 192.168.244.129` 正常
-    ![](https://github.com/CHENGXee/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-A-after.png?raw=true)
+    ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-A-after.png?raw=true)
 - 診斷推論：
     **本次故障為網路層問題**
     - 判斷依據：
@@ -70,16 +70,16 @@ flowchart LR
 - 故障前：
     - **Host:** `ssh app` 可以正常連線
     - **Host:** `ping 192.168.244.129` 正常
-    ![](https://github.com/CHENGXee/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-B-before.png?raw=true)
+    ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-B-before.png?raw=true)
 - 故障中：
     - **Host:** `ssh app` timeout
     - **Host:** `ping 192.168.244.129` 正常
-    ![](https://github.com/CHENGXee/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-B-during.png?raw=true)
+    ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-B-during.png?raw=true)
 - 回復後：
     重新允許 bastion SSH `sudo ufw allow from 192.168.244.128 to any port 22 proto tcp`
     - **Host:** `ssh app` 可以正常連線
     - **Host:** `ping 192.168.244.129` 正常
-    ![](https://github.com/CHENGXee/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-B-after.png?raw=true)
+    ![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/fault-B-after.png?raw=true)
 - 診斷推論：
     **本次故障為防火牆問題**
     - 判斷依據：
@@ -134,11 +134,11 @@ docker run -d --name web2 -p 8081:80 midterm-web
 ```
 
 ### docker history
-![](https://github.com/CHENGXee/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/docker-history.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/docker-history.png?raw=true)
 
 ### 服務驗證
 ```bash
 curl http://192.168.254.129:8081
 ```
 
-![](https://github.com/CHENGXee/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/bonus.png?raw=true)
+![](https://github.com/kevin083177/411630907_TKUCVT/blob/main/midterm_411630907/screenshots/bonus.png?raw=true)
